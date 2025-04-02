@@ -1035,8 +1035,9 @@ footer {
         width: 100%;
         display: flex;
         gap: 10px;
-        position: absolute;
+        position: fixed;
         top: 2%;
+        left: 2%;
        }
 
     .menu {
@@ -1067,15 +1068,16 @@ footer {
     .hamburger {
 
         width: 100%;
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        position: absolute;
+        position: fixed;
         top: 1%;
-        right: 5%; 
+        right: 30%; 
         background-color: white;
         color: black;
         
@@ -1092,21 +1094,27 @@ footer {
     }
 
 
-.mobile-menu {
-         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        background-color: white;
-        color: black;
-        /* font-size: 13px; */
-        inset: 0 0 0 0;
-        height: 40%; 
-        top: -48%;
-        transform: translatex(0%);
+    
 
+.mobile-menu {
+        
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-sizing: content-box;
+    color: black;
+    inset: 0 0 0 0;
+    height: 40vh; 
+    top: -60%;
+    left: -30%;
+    /* transform: translatex(00%); */
+       
     }
     .mobile-menu[data-visible= "false"] {
 
@@ -1171,33 +1179,7 @@ footer {
     
    }
 
-/* .menu-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-    width: 100%;
-   } */
 
-/* .btn-primery , .btn-secondery {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-family: anybody, sans-serif;
-    color: white;
-   }
-
-.btn-primery {
-    background-color: #5f6ad4;
-   }
-
-.btn-secondery {
-    background-color: black;
-    border: 1px solid white;
-   } */
 
 .hero {
     width: 100%;
